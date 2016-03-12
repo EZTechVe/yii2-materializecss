@@ -1,0 +1,14 @@
+{
+    "name": "yii2-materializecss.github.io",
+    "description": "Github documentation page for macgyer/yii2-materializecss repo",
+    "version": "1.0.0",
+    "devDependencies": {
+        "grunt": "*",
+        "grunt-contrib-sass": "*",
+        "grunt-contrib-watch": "*",
+        "grunt-autoprefixer": "*",
+        "grunt-contrib-uglify": "*",
+        "grunt-contrib-concat": "*",
+        "grunt-contrib-copy": "*"
+    }
+}

@@ -1,10 +1,149 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Documentation for macgyer/yii2-materializecss</title>
-</head>
+    <meta charset="UTF-8">
+    <title>macgyer/yii2-materializecss</title>
 
+    <link rel="stylesheet" href="assets/css/yii2-materializecss.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
 <body>
-<h1>Under development</h1>
+
+<header>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="/" class="brand-logo">macgyer/yii2-materializecss</a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section id="about" data-materialize-scrollspy="true">
+        <h1>About this repo</h1>
+        <div class="row">
+            <div class="col l4 s12">
+                <h2>What is Yii2?</h2>
+
+                <p>
+                    This is best explained by the folks at Yii themselves:
+                </p>
+
+                <blockquote>
+                    Yii is a free, open-source Web application development framework written in PHP5 that promotes
+                    clean, DRY design and encourages rapid development. It works to streamline your application
+                    development and helps to ensure an extremely efficient, extensible, and maintainable end product.
+                </blockquote>
+                <!--<blockquote>-->
+                <!--Being extremely performance optimized, Yii is a perfect choice for any sized project. However, it-->
+                <!--has been built with sophisticated, enterprise applications in mind. You have full control over the-->
+                <!--configuration from head-to-toe (presentation-to-persistence) to conform to your enterprise-->
+                <!--development guidelines. It comes packaged with tools to help test and debug your application, and-->
+                <!--has clear and comprehensive documentation.-->
+                <!--</blockquote>-->
+
+                <p>
+                    To learn more, head over to <a target="_blank" href="http://yiiframework.com">the official Yii
+                    website</a>
+                </p>
+
+            </div>
+            <div class="col l4 s12">
+                <h2>What is Materialize?</h2>
+
+                <p>
+                    Materialize is a bunch of CSS components based on Google's Material Design.
+                </p>
+
+                <blockquote>
+                    Created and designed by Google, Material Design is a design language that combines the classic
+                    principles of successful design along with innovation and technology. Google's goal is to develop a
+                    system of design that allows for a unified user experience across all their products on any
+                    platform.
+                </blockquote>
+
+                <p>
+                    For a full overview of all Materialize features visit the
+                    <a target="_blank" href="http://materializecss.com/">project website</a>.
+                </p>
+
+            </div>
+            <div class="col l4 s12">
+                <h2>Wiring up</h2>
+
+                <p>
+                    As a de facto standard Yii2 is shipped with a Bootstrap extension allowing for out of the box
+                    styled views in your application.
+                    <br><br>
+                    This repo provides an alternative to Bootstrap by implementing Materialize into Yii2.
+                    <br><br>
+                    Bootstrap is a really fine piece of CSS (especially with version 4 on the horizon). The intention
+                    of this repo is to show you another CSS framework and maybe to encourage you to use it your next
+                    Yii2 application.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" data-materialize-scrollspy="true">
+        <h1>Get it for your project</h1>
+
+        <div class="row">
+            <div class="col l6 s12">
+                Direct zip
+            </div>
+            <div class="col l6 s12">
+                Github
+            </div>
+        </div>
+    </section>
+
+    <section id="installation" data-materialize-scrollspy="true">
+        <h1>Installation</h1>
+
+        <pre><code class="language-json">
+"require": {
+    "macgyer/yii2-materializecss": "*"
+},
+        </code></pre>
+
+
+        <pre><code class="language-php">
+// @app/config/main-local.php
+
+$config['modules']['gii'] = [
+    'class' => 'yii\gii\Module',
+    'allowedIPs' => ['127.0.0.1', '::1', '192.168.0.*', '192.168.178.20'],
+    'generators' => [
+        'crud' => [
+            'class' => 'yii\gii\generators\crud\Generator',
+            'templates' => [ // setting materializecss templates
+                'materializecss' => '@vendor/macgyer/yii2-materializecss/src/gii-templates/generators/crud/materializecss',
+            ]
+        ]
+    ],
+];
+        </code></pre>
+    </section>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s4">Queen and Jack.</div>
+            <div class="col s4">Blubb</div>
+            <div class="col s4">Moop</div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="http://192.168.178.235:35729/livereload.js?snipver=1"></script>
+<script src="assets/js/yii2-materializecss.min.js"></script>
 </body>
 </html>

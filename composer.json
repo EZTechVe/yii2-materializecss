@@ -1,0 +1,26 @@
+{
+    "name": "macgyer/yii2-materializecss.github.io",
+    "minimum-stability": "stable",
+    "description": "Github documentation page for macgyer/yii2-materializecss repo",
+    "keywords": ["materialize", "yii2", "widgets", "material design"],
+    "type": "page",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Christoph Erdmann",
+            "homepage": "http://www.medienpol.de",
+            "role": "Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "bower-asset/materialize": "0.97.*",
+        "bower-asset/prism": "~1.4"
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}
