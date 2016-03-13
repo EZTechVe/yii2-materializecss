@@ -1,8 +1,26 @@
 * {
-    font-family: Roboto, monospace;
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: $blueGreyDarken4;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: $blueGreyDarken4;
+}
+
+h3 {
+
 }
 
 blockquote {
     font-style: italic;
-    line-height: 1.4em;
+    line-height: 2rem;
+}
+
+section {
+    margin-bottom: 3.8rem;
 }

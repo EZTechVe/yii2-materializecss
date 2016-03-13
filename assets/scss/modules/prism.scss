@@ -1,0 +1,12 @@
+.prism {
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+        font-family: monospace !important;
+        background: #fff;
+
+        * {
+            font-family: monospace !important;
+        }
+    }
+}

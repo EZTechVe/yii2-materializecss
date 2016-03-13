@@ -1,0 +1,13 @@
+.footer {
+
+    &.page-footer {
+        background: transparent;
+    }
+
+    .container {
+
+        > .row {
+            margin-bottom: 0;
+        }
+    }
+}
