@@ -1,0 +1,30 @@
+span.badge {
+
+    background-color: $brown;
+    color: #fff;
+
+    &.default {
+
+    }
+
+    &.since {
+
+        &:before {
+            content: 'since ';
+        }
+    }
+
+    &.updated {
+
+        &:before {
+            content: 'updated ';
+        }
+    }
+
+    &.planned {
+
+        &:before {
+            content: 'planned ';
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.navigation {
+
+    ul {
+
+        a {
+
+            &:hover,
+            &:focus {
+                background-color: $lightGreenDarken1;
+            }
+        }
+    }
+}
+
+.side-nav {
+
+    li:hover,
+    li.active {
+        background: transparent;
+
+        a {
+            color: #fff;
+        }
+    }
+
+}

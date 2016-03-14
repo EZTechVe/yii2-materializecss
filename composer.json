@@ -15,7 +15,8 @@
     "version": "1.0.0",
     "require": {
         "bower-asset/materialize": "0.97.*",
-        "bower-asset/prism": "~1.4"
+        "bower-asset/prism": "~1.4",
+        "bower-asset/font-awesome": "~4.5"
     },
     "extra": {
         "asset-installer-paths": {
