@@ -1,0 +1,245 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "bce87a8f07266835c9d5e243867c6b1d",
+    "content-hash": "38a24d435f54e26902db2d321a637678",
+    "packages": [
+        {
+            "name": "bower-asset/clipboard",
+            "version": "v1.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenorocha/clipboard.js.git",
+                "reference": "ff3cd2c722b744fa21d0fc621a08ad88b7a38189"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenorocha/clipboard.js/zipball/ff3cd2c722b744fa21d0fc621a08ad88b7a38189",
+                "reference": "ff3cd2c722b744fa21d0fc621a08ad88b7a38189",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/clipboard.js",
+                "bower-asset-ignore": [
+                    "/.*/",
+                    "/demo/",
+                    "/test/",
+                    "/.*",
+                    "/bower.json",
+                    "/karma.conf.js",
+                    "/src",
+                    "/lib"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Modern copy to clipboard. No Flash. Just 2kb",
+            "keywords": [
+                "clipboard",
+                "copy",
+                "cut"
+            ]
+        },
+        {
+            "name": "bower-asset/font-awesome",
+            "version": "v4.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "fddd2c240452e6c8990c4ef75e0265b455aa7968"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/fddd2c240452e6c8990c4ef75e0265b455aa7968",
+                "reference": "fddd2c240452e6c8990c4ef75e0265b455aa7968",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "less/font-awesome.less",
+                    "scss/font-awesome.scss"
+                ],
+                "bower-asset-ignore": [
+                    "*/.*",
+                    "*.json",
+                    "src",
+                    "*.yml",
+                    "Gemfile",
+                    "Gemfile.lock",
+                    "*.md"
+                ]
+            },
+            "license": [
+                "OFL-1.1",
+                "MIT",
+                "CC-BY-3.0"
+            ],
+            "description": "Font Awesome"
+        },
+        {
+            "name": "bower-asset/jquery",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "788eaba2f83e7b7445c7a83a50c81c0704423874"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/788eaba2f83e7b7445c7a83a50c81c0704423874",
+                "reference": "788eaba2f83e7b7445c7a83a50c81c0704423874",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/jquery.js",
+                "bower-asset-ignore": [
+                    "package.json"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "browser",
+                "javascript",
+                "jquery",
+                "library"
+            ]
+        },
+        {
+            "name": "bower-asset/materialize",
+            "version": "v0.97.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Dogfalo/materialize.git",
+                "reference": "14f272a58e3524623e330c736d3a9b88ab500cc2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/14f272a58e3524623e330c736d3a9b88ab500cc2",
+                "reference": "14f272a58e3524623e330c736d3a9b88ab500cc2",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=2.1.1"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "bin/materialize.css",
+                    "bin/materialize.js",
+                    "font/material-design-icons/Material-Design-Icons.eot",
+                    "font/material-design-icons/Material-Design-Icons.svg",
+                    "font/material-design-icons/Material-Design-Icons.ttf",
+                    "font/material-design-icons/Material-Design-Icons.woff",
+                    "font/material-design-icons/Material-Design-Icons.woff2",
+                    "font/roboto/Roboto-Bold.ttf",
+                    "font/roboto/Roboto-Bold.woff",
+                    "font/roboto/Roboto-Bold.woff2",
+                    "font/roboto/Roboto-Light.ttf",
+                    "font/roboto/Roboto-Light.woff",
+                    "font/roboto/Roboto-Light.woff2",
+                    "font/roboto/Roboto-Medium.ttf",
+                    "font/roboto/Roboto-Medium.woff",
+                    "font/roboto/Roboto-Medium.woff2",
+                    "font/roboto/Roboto-Regular.ttf",
+                    "font/roboto/Roboto-Regular.woff",
+                    "font/roboto/Roboto-Regular.woff2",
+                    "font/roboto/Roboto-Thin.ttf",
+                    "font/roboto/Roboto-Thin.woff",
+                    "font/roboto/Roboto-Thin.woff2",
+                    "sass/*"
+                ],
+                "bower-asset-ignore": [
+                    "jade/",
+                    ".gitignore",
+                    "CNAME",
+                    "css/",
+                    "bower.json",
+                    "README.md",
+                    "images/",
+                    "js/jquery.timeago.js",
+                    "js/init.js",
+                    "js/prism.js",
+                    "res/",
+                    "sass/style.scss",
+                    "sass/ghpages-materialize.scss",
+                    "**/*.html",
+                    "**/*.zip",
+                    "**/*.txt",
+                    "sitemap.xml",
+                    "package.json",
+                    "Gruntfile.js"
+                ]
+            },
+            "description": "A modern responsive front-end framework based on Material Design",
+            "keywords": [
+                "css",
+                "design",
+                "framework",
+                "front-end",
+                "js",
+                "material",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "ux"
+            ]
+        },
+        {
+            "name": "bower-asset/prism",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PrismJS/prism.git",
+                "reference": "97b0eb5a1a74760c5c0f37f82116679b33876634"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PrismJS/prism/zipball/97b0eb5a1a74760c5c0f37f82116679b33876634",
+                "reference": "97b0eb5a1a74760c5c0f37f82116679b33876634",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "prism.js",
+                    "themes/prism.css"
+                ],
+                "bower-asset-ignore": [
+                    "**/.*",
+                    "img",
+                    "templates",
+                    "CNAME",
+                    "*.html",
+                    "style.css",
+                    "favicon.png",
+                    "logo.svg",
+                    "download.js",
+                    "prefixfree.min.js",
+                    "utopia.js",
+                    "code.js"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Lightweight, robust, elegant syntax highlighting. A spin-off project from Dabblet."
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
