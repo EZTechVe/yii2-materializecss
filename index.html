@@ -21,10 +21,17 @@
                     <a href="#" data-activates="mobile-nav" class="right button-collapse"><span class="fa fa-bars"></span></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#about">About</a></li>
+                        <li><a class="dropdownTrigger" href="#!" data-activates="dd-installation">Installation<span class="fa fa-caret-down"></span></a></li>
+                        <li><a href="#widgets">Widgets</a></li>
+                        <li><a class="dropdownTrigger" href="#!" data-activates="dd-kb">Further reading<span class="fa fa-caret-down"></span></a></li>
+                    </ul>
+
+                    <ul id="dd-installation" class="dropdown-content">
                         <li><a href="#download">Download</a></li>
                         <li><a href="#getting-started">Getting started</a></li>
-                        <li><a href="#widgets">Widgets</a></li>
-                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+
+                    <ul id="dd-kb" class="dropdown-content">
                         <li><a href="#gii">Gii support</a></li>
                         <li><a href="#issues">Known issues</a></li>
                     </ul>
@@ -34,7 +41,6 @@
                         <li><a href="#download">Download</a></li>
                         <li><a href="#getting-started">Getting started</a></li>
                         <li><a href="#widgets">Widgets</a></li>
-                        <li><a href="#roadmap">Roadmap</a></li>
                         <li><a href="#gii">Gii support</a></li>
                         <li><a href="#issues">Known issues</a></li>
                     </ul>
@@ -49,7 +55,7 @@
         <section id="about" data-materialize-scrollspy="true">
             <h1>About this repo</h1>
             <div class="row">
-                <div class="col l4 s12">
+                <div class="col l4 m12 s12">
                     <h2>What is Yii2?</h2>
 
                     <p class="flow-text">
@@ -69,7 +75,7 @@
                     </p>
 
                 </div>
-                <div class="col l4 s12">
+                <div class="col l4 m12 s12">
                     <h2>What is Materialize?</h2>
 
                     <p class="flow-text">
@@ -90,7 +96,7 @@
                     </p>
 
                 </div>
-                <div class="col l4 s12">
+                <div class="col l4 m12 s12">
                     <h2>Wiring up</h2>
 
                     <p class="flow-text">
@@ -139,10 +145,13 @@
 
             <div class="prism z-depth-1">
                 <pre>
-                    <code class="language-bash">
+                    <code class="language-bash" id="composer-fxp">
                         $ composer global require "fxp/composer-asset-plugin:~1.1"
                     </code>
                 </pre>
+            </div>
+            <div class="clipboard">
+                <button type="button" class="btn btn-flat" data-clipboard-target="#composer-fxp"><span class="fa fa-clipboard"></span>Copy to clipboard</button>
             </div>
 
             <h2>Configure your app dependencies</h2>
@@ -152,12 +161,15 @@
 
             <div class="prism z-depth-1">
                 <pre>
-                    <code class="language-json">
+                    <code class="language-json" id="composer-require">
                         "require": {
                             "macgyer/yii2-materializecss": "*"
                         },
                     </code>
                 </pre>
+            </div>
+            <div class="clipboard">
+                <button type="button" class="btn btn-flat" data-clipboard-target="#composer-require"><span class="fa fa-clipboard"></span>Copy to clipboard</button>
             </div>
 
             <h2>Load Materialize</h2>
@@ -170,7 +182,7 @@
 
             <div class="prism z-depth-1">
                 <pre>
-                    <code class="language-php">
+                    <code class="language-php" id="asset-register">
                         // @app/views/layouts/main.php
 
                         \macgyer\yii2materializecss\assets\MaterializeAsset::register($this);
@@ -179,6 +191,9 @@
                     </code>
                 </pre>
             </div>
+            <div class="clipboard">
+                <button type="button" class="btn btn-flat" data-clipboard-target="#asset-register"><span class="fa fa-clipboard"></span>Copy to clipboard</button>
+            </div>
 
             <p class="flow-text">
                 Another way is to define a dependency in your app wide <span class="">AppAsset.php</span>
@@ -186,7 +201,7 @@
 
             <div class="prism z-depth-1">
                 <pre>
-                    <code class="language-php">
+                    <code class="language-php" id="asset-dependency">
                         // @app/assets/AppAsset.php
 
                         public $depends = [
@@ -197,13 +212,15 @@
                     </code>
                 </pre>
             </div>
+            <div class="clipboard">
+                <button type="button" class="btn btn-flat" data-clipboard-target="#asset-dependency"><span class="fa fa-clipboard"></span>Copy to clipboard</button>
+            </div>
         </section>
 
         <section id="widgets" data-materialize-scrollspy="true">
-            <h1>Available widgets</h1>
-            <p class="flow-text">
-                The following widgets are currently available:
-            </p>
+            <h1>Widgets</h1>
+
+            <h2>Currently available</h2>
 
             <div class="row">
                 <div class="col l6 m6 s12">
@@ -233,13 +250,8 @@
                     </ul>
                 </div>
             </div>
-        </section>
 
-        <section id="roadmap" data-materialize-scrollspy="true">
-            <h1>Roadmap</h1>
-            <p class="flow-text">
-                These widgets are planned for development:
-            </p>
+            <h2>Planned for development</h2>
 
             <ul class="collection">
                 <li class="collection-item">Collapsible</li>
@@ -258,7 +270,7 @@
 
             <div class="prism z-depth-1">
                 <pre>
-                    <code class="language-php">
+                    <code class="language-php" id="gii-support">
                         // @app/config/main-local.php
 
                         $config['modules']['gii'] = [
@@ -275,6 +287,9 @@
                         ];
                     </code>
                 </pre>
+            </div>
+            <div class="clipboard">
+                <button type="button" class="btn btn-flat" data-clipboard-target="#gii-support"><span class="fa fa-clipboard"></span>Copy to clipboard</button>
             </div>
 
             <p class="flow-text">
@@ -298,7 +313,7 @@
 
             <div class="prism z-depth-1">
                 <pre>
-                    <code class="language-php">
+                    <code class="language-php" id="issue-pickadate">
                         // @app/config/main.php
 
                         'components' => [
@@ -320,36 +335,21 @@
                     </code>
                 </pre>
             </div>
+            <div class="clipboard">
+                <button type="button" class="btn btn-flat" data-clipboard-target="#issue-pickadate"><span class="fa fa-clipboard"></span>Copy to clipboard</button>
+            </div>
         </section>
     </div>
 </main>
 
 <footer class="page-footer footer">
-    <div class="container">
-        <div class="row">
-            <div class="col l4 s12">
-                <h3>Contact</h3>
-
-                <p>
-                    This repo is maintained by <a target="_blank" href="https://github.com/MacGyer">MacGyer</a>
-                </p>
-            </div>
-
-            <div class="col l4 s12">
-                <h3>Contact</h3>
-
-                <p>
-                    This repo is maintained by <a target="_blank" href="https://github.com/MacGyer">MacGyer</a>
-                </p>
-            </div>
-            <div class="col l4 s12">
-                <h3>Contact</h3>
-
-                <p>
-                    This repo is maintained by <a target="_blank" href="https://github.com/MacGyer">MacGyer</a>
-                </p>
-            </div>
-        </div>
+    <div class="container center">
+        <p>
+            This repo is maintained by <a target="_blank" href="https://github.com/MacGyer">MacGyer</a><br>
+            <br>
+            All rights reserved.<br>
+            Issued under <a href="https://github.com/MacGyer/yii2-materializecss/blob/master/LICENSE" target="_blank" title="License">BSD-3-Clause</a>
+        </p>
     </div>
 </footer>
 
@@ -357,6 +357,7 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/materialize.js"></script>
 <script src="assets/js/prism.js"></script>
+<script src="assets/js/clipboard.min.js"></script>
 <script src="assets/js/yii2-materializecss.min.js"></script>
 </body>
 </html>

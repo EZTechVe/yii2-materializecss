@@ -9,4 +9,13 @@
             font-family: monospace !important;
         }
     }
+
+    div.prism-show-language {
+
+        .prism-show-language-label {
+            background: $blueGreyDarken4;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
 }

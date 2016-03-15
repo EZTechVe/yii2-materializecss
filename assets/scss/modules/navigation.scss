@@ -8,6 +8,10 @@
             &:focus {
                 background-color: $lightGreenDarken1;
             }
+
+            .fa {
+                margin-left: 0.5rem;
+            }
         }
     }
 }
@@ -22,5 +26,19 @@
             color: #fff;
         }
     }
+}
 
+.dropdown-content {
+
+    &.active {
+
+        a {
+            color: $blueGreyDarken4;
+
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
 }

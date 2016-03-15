@@ -54,6 +54,7 @@ module.exports = (grunt) ->
                         dest: 'assets/js/'
                     },
                     {expand: true, cwd: 'vendor/prism/', src: ['prism.js'], dest: 'assets/js/'},
+                    {expand: true, cwd: 'vendor/bower/clipboard/dist/', src: ['clipboard.min.js'], dest: 'assets/js/'},
                     {
                         expand: true,
                         cwd: 'vendor/bower/materialize/dist/css/',

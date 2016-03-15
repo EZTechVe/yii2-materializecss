@@ -4,9 +4,47 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "858a5bc0e1f56482ac2cdb29c46f3d8e",
-    "content-hash": "2794d7eb3d192b8449fc38ad5c4f5ccf",
+    "hash": "bce87a8f07266835c9d5e243867c6b1d",
+    "content-hash": "38a24d435f54e26902db2d321a637678",
     "packages": [
+        {
+            "name": "bower-asset/clipboard",
+            "version": "v1.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zenorocha/clipboard.js.git",
+                "reference": "ff3cd2c722b744fa21d0fc621a08ad88b7a38189"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zenorocha/clipboard.js/zipball/ff3cd2c722b744fa21d0fc621a08ad88b7a38189",
+                "reference": "ff3cd2c722b744fa21d0fc621a08ad88b7a38189",
+                "shasum": ""
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "dist/clipboard.js",
+                "bower-asset-ignore": [
+                    "/.*/",
+                    "/demo/",
+                    "/test/",
+                    "/.*",
+                    "/bower.json",
+                    "/karma.conf.js",
+                    "/src",
+                    "/lib"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Modern copy to clipboard. No Flash. Just 2kb",
+            "keywords": [
+                "clipboard",
+                "copy",
+                "cut"
+            ]
+        },
         {
             "name": "bower-asset/font-awesome",
             "version": "v4.5.0",
