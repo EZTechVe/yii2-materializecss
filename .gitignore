@@ -14,3 +14,13 @@ Thumbs.db
 
 # Mac DS_Store Files
 .DS_Store
+
+# Composer
+vendor
+
+# SASS
+.sass-cache
+
+# NPM
+npm-debug.log
+node_modules
