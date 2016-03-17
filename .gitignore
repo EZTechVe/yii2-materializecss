@@ -15,12 +15,12 @@ Thumbs.db
 # Mac DS_Store Files
 .DS_Store
 
-# Composer
-vendor
+# NPM
+node_modules
+npm-debug.log
 
 # SASS
 .sass-cache
 
-# NPM
-npm-debug.log
-node_modules
+# composer
+vendor

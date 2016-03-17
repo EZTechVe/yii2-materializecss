@@ -1,0 +1,21 @@
+.prism {
+
+    code[class*="language-"],
+    pre[class*="language-"] {
+        font-family: monospace !important;
+        background: #fff;
+
+        * {
+            font-family: monospace !important;
+        }
+    }
+
+    div.prism-show-language {
+
+        .prism-show-language-label {
+            background: $blueGreyDarken4;
+            color: #fff;
+            border-radius: 0;
+        }
+    }
+}
