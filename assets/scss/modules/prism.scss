@@ -18,4 +18,13 @@
             border-radius: 0;
         }
     }
+
+    &.outdated {
+        background: $greyLighten2;
+
+        * {
+            background: $greyLighten2 !important;
+            color: $grey !important;
+        }
+    }
 }
