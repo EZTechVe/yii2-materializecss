@@ -244,18 +244,18 @@
                         <li class="collection-item">Button</li>
                         <li class="collection-item">Chip</li>
                         <li class="collection-item">DatePicker</li>
-                        <li class="collection-item">DetailView</li>
+                        <li class="collection-item">DetailView<span class="badge updated">1.0.4</span></li>
                         <li class="collection-item">Dropdown</li>
                     </ul>
                 </div>
                 <div class="col l6 m6 s12">
                     <ul class="collection">
                         <li class="collection-item">Fixed Action Button</li>
-                        <li class="collection-item">GridView with ActionColumn</li>
+                        <li class="collection-item">GridView with ActionColumn<span class="badge updated">1.0.4</span></li>
                         <li class="collection-item">Icon</li>
                         <li class="collection-item">Modal</li>
                         <li class="collection-item">Nav<span class="badge updated">1.0.3</span></li>
-                        <li class="collection-item">NavBar<span class="badge updated">1.0.3</span></li>
+                        <li class="collection-item">NavBar<span class="badge updated">1.0.4</span></li>
                         <li class="collection-item">Progress<span class="badge since">1.0.2</span></li>
                         <li class="collection-item">Spinner<span class="badge since">1.0.2</span></li>
                         <li class="collection-item">SwitchButton</li>
@@ -268,7 +268,7 @@
             <ul class="collection">
                 <li class="collection-item">Collapsible</li>
                 <li class="collection-item"><span class="badge planned">1.0.5</span>Collection</li>
-                <li class="collection-item"><span class="badge planned">1.0.4</span>Toast</li>
+                <li class="collection-item"><span class="badge planned">1.0.5</span>Toast</li>
             </ul>
         </section>
 
@@ -313,7 +313,19 @@
         <section id="issues" data-materialize-scrollspy="true">
             <h1>Known issues</h1>
 
+            <h2>Datepicker &amp; jQuery 2.2.x</h2>
             <p class="flow-text">
+                Update 2016/04/04<br>
+                <br>
+                As of release 0.97.6 the issue mentioned below has been fixed by the Materialize team.<br>
+                You do not need to apply the workaround below.
+                <br>
+                <br>
+                For further information visit
+                <a target="_blank" href="https://github.com/Dogfalo/materialize/releases/tag/v0.97.6">Dogfalo/materialize v0.97.6</a>.
+            </p>
+
+            <p class="flow-text outdated">
                 Currently there is an issue with jQuery version 2.2.x and the datepicker pickadate.js. Please check out
                 the
                 issues at <a target="_blank" href="https://github.com/Dogfalo/materialize/issues/2688">Dogfalo/materialize/issues</a>.
@@ -323,7 +335,7 @@
                 this in your asset bundle config:
             </p>
 
-            <div class="prism z-depth-1">
+            <div class="prism z-depth-1 outdated">
                 <pre>
                     <code class="language-php" id="issue-pickadate">
                         // @app/config/main.php
@@ -366,7 +378,7 @@
 </footer>
 
 <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/materialize.js"></script>
+<script src="assets/js/materialize.min.js"></script>
 <script src="assets/js/prism.js"></script>
 <script src="assets/js/clipboard.min.js"></script>
 <script src="assets/js/yii2-materializecss.min.js"></script>
