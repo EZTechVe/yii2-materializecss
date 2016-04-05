@@ -24,14 +24,16 @@ h3 {
 p {
 
     a {
-        //border-bottom: dotted 1px $brownLighten3;
         color: $brown;
 
         &:hover,
         &:focus {
             color: $pinkDarken1;
-            //border-bottom: dotted 1px $blueGreyDarken4;
         }
+    }
+    
+    &.outdated {
+        text-decoration: line-through;
     }
 }
 
